@@ -1,0 +1,154 @@
+PROBLEM 1: Explore more about CLI commands, and learn how to create a table in CMD.
+
+The Command Line Interface (CLI) is a text-based interface that allows you to interact with your computer using text commands. In Windows, the most common CLI is the Command Prompt (CMD). You can perform various tasks using CMD, such as navigating directories, managing files, and executing scripts.
+
+Here are some commonly used CLI commands in CMD:
+
+1. Navigation and Directories:
+   ->cd [directory]: Change the current directory to the specified directory.
+   ->cd ..: Move up one directory level.
+   ->dir: List the contents of the current directory.
+2. File Management:
+   ->copy [source] [destination]: Copy files from source to destination.
+   ->del [file]: Delete the specified file.
+   ->ren [old name] [new name]: Rename a file.
+   ->mkdir [directory]: Create a new directory.
+3. System Information:
+   ->ipconfig: Display IP configuration.
+   ->systeminfo: Display detailed information about the system.
+4. Networking:
+   ->ping [address]: Send a ping to the specified address.
+   ->tracert [address]: Trace the route to the specified address.
+5. Batch Commands:
+   ->You can create a batch file (.bat) with a series of commands to automate tasks.
+6. Text Manipulation:
+   ->type [file]: Display the contents of a text file.
+   ->findstr [pattern] [file]: Search for a specific pattern in a file.
+
+
+
+PROBLEM 2:
+Create the Below Structure using CLI.
+Main Folder: Ducat-Learning
+Sub-Folders: Learning, Assignments
+Sub-Folder: Assignment
+Assignment-Sub-Folders: Sprint 1, Sprint 2, Sprint 3, and so on.
+Notes:
+Do the same thing for Learning Folder.
+
+
+C:\Users\sahami>mkdir ducat-learning
+
+C:\Users\sahami>cd ducat-learning
+
+C:\Users\sahami\ducat-learning>md learning,assignments
+
+C:\Users\sahami\ducat-learning>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 98FA-EFFA
+
+ Directory of C:\Users\sahami\ducat-learning
+
+03-05-2024  10:50    <DIR>          .
+03-05-2024  10:50    <DIR>          ..
+03-05-2024  10:50    <DIR>          assignments
+03-05-2024  10:50    <DIR>          learning
+               0 File(s)              0 bytes
+               4 Dir(s)  192,923,430,912 bytes free
+
+C:\Users\sahami\ducat-learning>cd assignment
+The system cannot find the path specified.
+
+C:\Users\sahami\ducat-learning>cd assignments
+
+C:\Users\sahami\ducat-learning\assignments>md Sprint_1,Sprint_2,Sprint_3
+
+C:\Users\sahami\ducat-learning\assignments>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 98FA-EFFA
+
+ Directory of C:\Users\sahami\ducat-learning\assignments
+
+03-05-2024  10:53    <DIR>          .
+03-05-2024  10:50    <DIR>          ..
+03-05-2024  10:53    <DIR>          Sprint_1
+03-05-2024  10:53    <DIR>          Sprint_2
+03-05-2024  10:53    <DIR>          Sprint_3
+               0 File(s)              0 bytes
+               5 Dir(s)  192,905,060,352 bytes free
+
+C:\Users\sahami\ducat-learning\assignments>cd ..
+
+C:\Users\sahami\ducat-learning>cd learning
+
+C:\Users\sahami\ducat-learning\learning>md Sprint_1,Sprint_2,Sprint_3
+
+C:\Users\sahami\ducat-learning\learning>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 98FA-EFFA
+
+ Directory of C:\Users\sahami\ducat-learning\learning
+
+03-05-2024  10:53    <DIR>          .
+03-05-2024  10:50    <DIR>          ..
+03-05-2024  10:53    <DIR>          Sprint_1
+03-05-2024  10:53    <DIR>          Sprint_2
+03-05-2024  10:53    <DIR>          Sprint_3
+               0 File(s)              0 bytes
+               5 Dir(s)  192,904,986,624 bytes free
+
+C:\Users\sahami\ducat-learning\learning>
+
+
+
+
+
+
+
+
+PROBLEM 3:  Show some examples of how to create a file inside a folder, append data, and replace data.
+
+
+C:\Users\sahami>mkdir new_folder
+
+C:\Users\sahami>cd new_folder
+
+C:\Users\sahami\new_folder>echo "this is a  new file" > newfile.txt
+
+C:\Users\sahami\new_folder>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 98FA-EFFA
+
+ Directory of C:\Users\sahami\new_folder
+
+03-05-2024  10:38    <DIR>          .
+03-05-2024  10:37    <DIR>          ..
+03-05-2024  10:38                24 newfile.txt
+               1 File(s)             24 bytes
+               2 Dir(s)  192,917,409,792 bytes free
+
+C:\Users\sahami\new_folder> echo "append some data" >> newfile.txt
+
+C:\Users\sahami\new_folder>newfile.txt
+
+C:\Users\sahami\new_folder>echo "this replace the data" > newfile.txt
+
+C:\Users\sahami\new_folder>fir
+'fir' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\sahami\new_folder>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 98FA-EFFA
+
+ Directory of C:\Users\sahami\new_folder
+
+03-05-2024  10:38    <DIR>          .
+03-05-2024  10:37    <DIR>          ..
+03-05-2024  10:41                26 newfile.txt
+               1 File(s)             26 bytes
+               2 Dir(s)  192,916,709,376 bytes free
+
+C:\Users\sahami\new_folder>newfile.txt
+
+C:\Users\sahami\new_folder>                                     
