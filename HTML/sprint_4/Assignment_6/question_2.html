@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Request Form</title>
+</head>
+
+<body>
+
+    <p><b>QUESTION 2:The library is updating its system and wants an online form for book
+            requests. Design an HTML form that allows users to input book details,
+            preferred pickup location, and contact information.</b></p>
+    <br>
+    <hr>
+    <h1>Library Book Request</h1>
+    <form>
+        <!-- Book Details Section -->
+        <fieldset>
+            <legend><b>Book Details</b></legend>
+            <br>
+
+
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" name="bookTitle" required>
+            <br><br>
+
+            <label for="author">Author:</label>
+            <input type="text" name="author" required>
+            <br><br>
+
+            <label for="isbn">ISBN:</label>
+            <input type="text" name="isbn">
+            <br><br>
+
+            <label for="publicationYear">Publication Year:</label>
+            <input type="number" name="publicationYear" min="100" max="999">
+            <br><br>
+        </fieldset>
+        <br>
+        <!-- Pickup Location Section -->
+        <fieldset>
+            <legend><b>Pickup Location</b></legend>
+            <br>
+
+            <label for="location">Select Pickup Branch :</label>
+            <select  name="location" required>
+                <option value="mainBranch">Main Branch</option>
+                <option value="eastBranch">East Branch</option>
+                <option value="westBranch">West Branch</option>
+                <option value="northBranch">North Branch</option>
+                <option value="southBranch">South Branch</option>
+            </select>
+            <br><br>
+        </fieldset>
+        <br>
+
+        <!-- Contact Information Section -->
+        <fieldset>
+            <legend><b>Contact Information</b></legend>
+            <br>
+
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" name="fullName" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" i name="email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+            <br><br>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Request Book">
+    </form>
+</body>
+
+</html>

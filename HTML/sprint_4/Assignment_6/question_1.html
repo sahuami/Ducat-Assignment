@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+
+    <p><B>QUESTION 1 : A local community is organizing an event, and they want to collect 
+        participant information. Create an HTML form for online registration, 
+        including fields for name, contact details, and event preferences</B></p>
+
+    <h1>Event Registration</h1>
+    <form >
+        <!-- Name Section -->
+        <label for="FullName">Full Name:</label>
+        <input type="text" name="Fullname" required>
+        <br><br>
+        <!-- Contact Details Section -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" required>
+        <br><br>
+
+
+
+
+        <!-- Event Preferences Section -->
+        <label for="sessions">Preferred Sessions:</label>
+        <select name="sessions" multiple required>
+            <option value="session1">Session 1: Introduction to the Event</option>
+            <option value="session2">Session 2: Workshop on Topic A</option>
+            <option value="session3">Session 3: Workshop on Topic B</option>
+            <option value="session4">Session 4: Panel Discussion</option>
+            <option value="session5">Session 5: Networking</option>
+        </select>
+        <br><br>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea name="comments" rows="3" cols="20"></textarea>
+        <br><br>
+
+        <!-- <input type="submit" value="Register"> -->
+
+        <button>Submit</button>
+        
+    </form>
+</body>
+</html>

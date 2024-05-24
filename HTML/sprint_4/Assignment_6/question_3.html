@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Fitness Challenge Sign-Up</title>
+</head>
+
+<body>
+    <h1>Community Fitness Challenge Sign-Up</h1>
+    <form>
+        <!-- Personal Details Section -->
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+
+            <label for="Name">Full Name:</label>
+            <input type="text" name="Name" required>
+            <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" required min="10" max="100">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" required>
+            <br><br>
+        </fieldset>
+
+        <!-- Fitness Goals Section -->
+        <fieldset>
+            <legend><b>Fitness Goals</b></legend>
+
+            <label for="fitnessGoals">Please describe your fitness goals:</label>
+            <textarea id="fitnessGoals" name="fitnessGoals" rows="4" cols="50" required></textarea>
+            <br><br>
+
+            <label for="fitnessLevel">Current Fitness Level:</label>
+            <select id="fitnessLevel" name="fitnessLevel" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            <br><br>
+        </fieldset>
+
+        <!-- Preferred Workout Times Section -->
+        <fieldset>
+            <legend><b>Preferred Workout Times</b></legend>
+
+            <label for="workoutTimes">Select your preferred workout times:</label>
+            <select id="workoutTimes" name="workoutTimes" multiple required>
+                <option value="morning">Morning (6am - 9am)</option>
+                <option value="midday">Midday (11am - 2pm)</option>
+                <option value="afternoon">Afternoon (3pm - 6pm)</option>
+                <option value="evening">Evening (7pm - 9pm)</option>
+            </select>
+            <br><br>
+        </fieldset>
+
+        <br>
+        <!-- Submit Button -->
+        <button>Sign up</button>
+    </form>
+</body>
+
+</html>
