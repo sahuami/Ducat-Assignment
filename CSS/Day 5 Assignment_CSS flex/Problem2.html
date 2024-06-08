@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .nav {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 1px 2px 3px 4px rgba(121, 121, 182, 0.2);
+        }
+
+        .nav>:nth-child(1) {
+            height: 60px;
+            width: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 900;
+            color: aliceblue;
+            background: linear-gradient(0.25turn, rgb(104, 84, 218), #081b78);
+            margin-left: 70px;
+            border-radius: 5px;
+
+        }
+
+        .nav>:nth-child(2) {
+            margin-right: 70px;
+
+        }
+
+        .nav>:nth-child(2)>a {
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 70px;
+
+        }
+
+        .left {
+            width: 40%;
+            padding-left: 40px;
+            margin-left: 30px;
+
+
+        }
+
+        .left>:nth-child(1) {
+            margin-top: 60px;
+            margin-bottom: 20px;
+            color: blue;
+            padding-right: 140px;
+
+
+        }
+
+        .left>:nth-child(2) {
+            padding-right: 140px;
+            font-size: 40px;
+        }
+
+        .left>:nth-child(3) {
+            margin-top: 30px;
+            line-height: 25px;
+            padding-right: 140px;
+            font-size: 17px;
+
+
+        }
+
+        .left>:nth-child(4) {
+            margin-top: 30px;
+            line-height: 25px;
+            padding-right: 140px;
+            font-size: 17px;
+
+        }
+        .left>:nth-child(5){
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            font-size: large;
+            font-weight: 800;
+        }
+        .left>:nth-child(5)>p{
+            margin-left: 20px;
+        }
+
+        .right {
+            width: 40%;
+            height: 40rem;
+            margin-right: 30px;
+            margin-top: -60px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+
+        }
+
+        .right>div {
+            width: 30%;
+            height: 35%;
+            margin: 20px;
+            box-shadow: 1px 2px 3px 4px rgba(177, 155, 155, 0.2);
+            padding: 20px;
+        }
+
+        .right>div>p {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="nav">
+        <div>
+            <p>StudyLab</p>
+        </div>
+        <div>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Course</a>
+            <a href="">Instructor</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="left">
+            <p>WELCOME TO STUDYLAB</p>
+            <h1>We are StudyLab An Online Learning Center</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel rerum ipsa odit autem architecto rem,
+                perspiciatis animi? Consequatur quidem eius, atque veritatis impedit nisi possimus voluptates sint.
+                Dolorem eligendi animi quo
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel rerum ipsa odit autem architecto rem,
+                perspiciatis animi? Consequatur quidem eius, atque veritatis impedit nisi possimus voluptates sint.
+                Dolorem eligendi animi quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quam?
+            </p>
+            <div >
+                <iframe width="150" height="80" src="https://www.youtube.com/embed/ONFMdg40GsM"
+                    title="🔴LIVE: Arvind Kejriwal का तूफानी रोड शो | Aam Aadmi Party | Election 2024 | Chandni Chowk"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <p>Learn anything from StudyLab, Watch video
+                </p>  </div>
+
+
+        </div>
+        <div class="right">
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/13498/13498803.png"
+                    style="background-color: #081b78; border-radius: 50%; width: 50px;" alt="">
+                <h3>Top Quality Content</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quasi!</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/13498/13498803.png"
+                    style="background-color: #081b78; border-radius: 50%; width: 50px;" alt="">
+                <h3>Hightly Skilled Instructor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quasi!</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/13498/13498803.png"
+                    style="background-color: #081b78; border-radius: 50%; width: 50px;" alt="">
+                <h3>World Class & Quiz</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quasi!</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/13498/13498803.png"
+                    style="background-color: #081b78; border-radius: 50%; width: 50px;" alt="">
+                <h3>Get Certified</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quasi!</p>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
