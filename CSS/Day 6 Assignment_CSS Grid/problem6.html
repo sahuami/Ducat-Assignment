@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        h1{
+            text-align: center;
+            margin-top: 100px;
+            font-size: 50px;
+        }
+        #father {
+            width: fit-content;
+            display: grid;
+            grid-template-columns: repeat(4, 50px);
+            grid-template-rows: repeat(5, 50px);
+            gap: 15px;
+            box-shadow: 1px 2px 3px 3px rgba(17, 2, 2, 0.091);
+            margin: auto;
+            margin-top: 50px;
+            padding: 30px;
+            border-radius: 10px;
+
+        }
+
+        #father>div {
+            display: flex;
+            box-shadow: 1px 2px 3px 3px rgba(17, 2, 2, 0.091);
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+
+        #father>div:nth-child(1) {
+            grid-area: 1/1/2/5;
+        }
+
+        #father>div:nth-child(5) {
+            background-color: black;
+            color: white;
+        }
+
+        #father>div:nth-child(9) {
+            background-color: black;
+            color: white;
+        }
+
+        #father>div:nth-child(13) {
+            background-color: black;
+            color: white;
+        }
+
+        #father>div:nth-child(14) {
+            background-color: red;
+            color: white;
+        }
+
+        #father>div:nth-child(16) {
+            background-color: black;
+            color: white;
+        }
+
+        #father>div:nth-child(17) {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 >Ducat Calculator</h1>
+
+    <div id="father">
+
+        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>*</div>
+        <div>C</div>
+        <div>0</div>
+        <div>=</div>
+        <div>/</div>
+    </div>
+
+</body>
+
+</html>

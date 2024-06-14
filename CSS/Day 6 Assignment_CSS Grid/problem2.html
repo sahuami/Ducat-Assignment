@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            background-color: rgba(63, 125, 104, 0.676);
+        }
+        #father {
+            width: 500px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            background-color: rgba(16, 15, 15, 0.9);
+            border-radius: 20px;
+            padding: 20px;
+            margin: auto;
+            gap: 20px;
+            margin-top: 200px;
+            background-color: rgba(0, 255, 255, 0.39);
+
+        }
+
+        #father>div {
+            width: 100px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(16, 15, 15, 0.6);
+            box-shadow: 1px 2px 2px 1px black;
+            color: aqua;
+            font-weight: bold;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        #father>div:nth-child(1){
+            grid-area: 1/1/2/3 ;
+            width: 230px;
+        }
+        #father>div:nth-child(2){
+            grid-area: 1/3/2/5 ;
+            width: 230px;
+        }
+        #father>div:nth-child(4){
+            grid-area: 2/2/3/5 ;
+            width: 360px;
+        }
+        #father>div:nth-child(5){
+            grid-area: 3/1/4/5 ;
+            width:490px ;
+        }
+
+
+
+    </style>
+</head>
+
+
+<body>
+    <div id="father">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+
+    </div>
+
+
+
+</body>
+
+</html>
